@@ -9,9 +9,15 @@
         siteName.onclick = function() {  window.location.reload(true); };
         let NAVICON= document.getElementById("nav-icon" );
         let NAVMODAL = document.getElementById("nav-modal");
+        let NAVCLOSE = document.getElementById("nav-close");
+        NAVCLOSE.onclick = function() {NAVMODAL.style.display="none" ;};
         let NAVTOINSTRUCTION = document.getElementById("navToInstruction");
-         NAVTOINSTRUCTION.onclick = function() { renderInstructions(); };
+        NAVTOINSTRUCTION.onclick = function() { renderInstructions(); NAVMODAL.style.display="none" ;};
         let QUIZBOX = document.getElementById("quizBox");
+
+        let MENUBUTTONFORQUIZ = document.getElementById("menuButton-forQuiz");
+        MENUBUTTONFORQUIZ.addEventListener('click', renderInstructions);
+
         let questionContainer = document.getElementById("questionContainer");
         let TOTESTPARA = document.getElementById("totestinstruction");
         let PROGRESSBAR= document.getElementById("progress-bar");
@@ -21,9 +27,20 @@
         let answerView = document.getElementById("ANSDISPLAY");
         let ANSCLOSE = document.getElementById("ansClose"); 
 
-       // NAVICON.onclick = function(){ NAVMODAL.style.display = "block"; };
+       
+        
+        NAVICON.addEventListener('click', toggleNavmodal);                         
+         function toggleNavmodal(){
+        
+            if(NAVMODAL.style.display==="none"){
+                NAVMODAL.style.display="block" ;
+            }else{NAVMODAL.style.display="none" ;}
+           
+              }
+
+             
          
-         //THE CODE BELOW CREATES BUTTON THAT RENDERS TEST INSTRUCTION
+         //THE CODE BELOW CREATES BUTTON THAT RENDERS TEST INSTRUCTION AFTER THE WINDOW HAS LOADED
 
                let testInstructionButton = document.createElement("INPUT");
                testInstructionButton.setAttribute("type","button" );
@@ -61,27 +78,8 @@
                                           }
          
     
-                let Row;
-                let answerSheetHeading;
-                let tableHeadCell;
-
-       function createTableHead(){
-                  Row = TABLE.insertRow(-1);                 
-                  answerSheetHeading = [ "Attempted Question", "Selected Answer","Remark" ];
-                  for(let h =0; h < answerSheetHeading.length; h++){
-                  tableHeadCell =  document.createElement("TH"); 
-                  tableHeadCell.innerHTML = answerSheetHeading[h] ;
-                  Row.appendChild(tableHeadCell);
-                 
-                                                                                      }
-                                                 } 
-
-
-                  
-    
-          
-           
-                  let rowCount , tableValues ,TD ;
+                 let Row;
+                 let rowCount , tableValues ,TD ;
           
      function createTableRow(){
                   rowCount = TABLE.rows.length;
@@ -182,9 +180,9 @@
         chB=Questions[q][2];
         chC=Questions[q][3];
         questionContainer.innerHTML= "<h4>"+question+ "</h4> <br>";
-        questionContainer.innerHTML+= ` <legend><input type='radio' value='A' name='choices'/> <b>A:</b>  ${chA} </legend><br>`;
-        questionContainer.innerHTML+= ` <legend><input type='radio' value='B' name='choices'/> <b>B:</b>  ${chB} </legend><br>`;
-        questionContainer.innerHTML+= ` <legend><input type='radio' value='C' name='choices'/> <b>C:</b>  ${chC} </legend><br>`; 
+        questionContainer.innerHTML+= ` <legend><label for="optionA"> <input type='radio' value='A' id="optionA" name='choices'/> <b>A:</b>  ${chA} </label> </legend><br>`;
+        questionContainer.innerHTML+= ` <legend><label for="optionB"><input type='radio' value='B' id="optionB" name='choices'/> <b>B:</b>  ${chB}  </label> </legend><br>`;
+        questionContainer.innerHTML+= ` <legend><label for="optionC"><input type='radio' value='C' id="optionC" name='choices'/> <b>C:</b>  ${chC}  </label> </legend><br>`; 
         PROGRESSBAR.innerHTML = " Question<span class='red' >"  +   (q +1 ) +  "</span> of <span class='blue' > " + QLen  + " </span>Questions";
                                                             
         showAnimals();                   // THIS FUNCTION PRESENTS ANIMALS AND OTHER ITEMS PICTURES
@@ -421,6 +419,7 @@
                        let advertContainer=document.getElementById("fade-advert");
                        let productLink=document.getElementById("link");
                        let goodsCaption = document.getElementById('goods-caption');
+                       let figureElement = document.getElementById('figElem')
 
                        let productImage=document.createElement('IMG');
                        productImage.setAttribute("class", "affiliateProductImage");
@@ -432,6 +431,9 @@
                        buyButton.setAttribute('type','button');
                        buyButton.setAttribute('value','BUY It NOW');
                        buyButton.setAttribute('id','buyNowBtn'); 
+
+                       let goodsName = document.createElement('DIV');
+                       goodsName.setAttribute('id','goodsname');
 
 
       function affiliateMarket(){
@@ -506,10 +508,12 @@
                           
           if(infoIndex>=productInfo.length){ 
                                             infoIndex= 1;
-                                            goodsCaption.innerHTML=productInfo[infoIndex - 1];
-                                        }else{goodsCaption.innerHTML=productInfo[infoIndex];
-                                              
-                                              goodsCaption.appendChild(buyButton);
+                                            goodsName.innerHTML=productInfo[infoIndex - 1];
+                                        }else{goodsName.innerHTML=productInfo[infoIndex];
+                                              advertContainer.appendChild(goodsName);
+                                              //goodsCaption.appendChild(buyButton);
+                                              //figureElement.appendChild(buyButton);
+                                              advertContainer.appendChild(buyButton);
                                               infoIndex++;
                                              }
 
@@ -533,7 +537,7 @@
 
                 //THIS CODE IS FOR TYPING EFFECT
                  
-                
+        /*        
                 
               let dataPrice =document.getElementById("netbiz");  
             function movingCharacters(){
@@ -553,12 +557,12 @@
                     
                           }
                 setTimeout(movingCharacters,1000);
-
+        */
                 
             
               //CODE FOR NETBIZ FADE-IN FADE-OUT 
             
-              let dataBreakdown = ['1GB <span style="color:green;font-weight:bold;">&rarr;</span> &#8358; 250',  '2GB <span style="color:green;font-weight:bold;">&rarr;</span> &#8358; 500',  '3GB <span style="color:green;font-weight:bold;">&rarr;</span> &#8358; 750',  '30Days Validity','TopUp Now!', '<span style="color:steelblue;">DStv</span> Subs.',  'GO<span style="color:green;">tv</span> Subs.',  '<span style="color:black;"> StarTimes</span> Subs.',  'Subscribe Now!'];
+              let dataBreakdown = ['1GB <span style="color:green;font-weight:bold;"> = </span> &#8358; 250',  '2GB <span style="color:green;font-weight:bold;"> = </span> &#8358; 500',  '3GB <span style="color:green;font-weight:bold;"> = </span> &#8358; 750',  '30Days Validity','TopUp Now!', '<span style="color:steelblue;">DStv</span> Subs.',  'GO<span style="color:green;">tv</span> Subs.',  '<span style="color:black;"> StarTimes</span> Subs.',  'Subscribe Now!'];
 
               let DATACOST = document.getElementById('data-cost');
               let databreakdownIndex = 0;
@@ -721,11 +725,6 @@
             </article>    
                 
              `;    
-       let navToebu = document.getElementById("about-ebu");         
-       navToebu.onclick = function(){questionContainer.innerHTML = whoAreEbus;
-                                     questionContainer.style.textAlign = "left"; } ;
-       
-                     
      
      
      
