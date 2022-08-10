@@ -424,6 +424,7 @@ color:#B8860B;
 span.blue{
    color:steelblue;
    font-weight : bold;
+  background-color:white;
       }
 
  a{
@@ -461,10 +462,13 @@ color:green;
 
 span.red{
 color:red;
+background-color:white;
+font-family:helvetica;
 }
 
 span.steelblue{
 color:steelblue;
+font-family:helvetica;
 }
 
 img{
