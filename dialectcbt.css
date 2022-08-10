@@ -4,7 +4,7 @@
   body{
     margin:0px;
     padding:0px;
-    overflow-x:hidden;
+    
        }
 
 
@@ -27,7 +27,6 @@
   position :fixed;
   box-sizing:border-box;
   overflow-y:auto;
-  overflow-x:hidden;
   background-color : ;
   padding :;
                }
@@ -136,7 +135,7 @@
  #questionContainer{
                 width :100%;
                 position :relative;
-                margin :auto;
+                margin : ;
                 background-color:#ffffff;  
                 font-family:"Georgia, 'Times New Roman', Times, serif;  /*Raleway";  arial,Tahoma,sans-serif; */
                 font-weight:lighter;
