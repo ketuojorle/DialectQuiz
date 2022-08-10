@@ -86,8 +86,8 @@
                font-size:12px;
                border:1px solid grey;
             
-               animation:navfadeIn 0.2s;
-               -webkit-animation:navfadeIn 0.2s; 
+               animation:navfadeIn 0.2s linear;
+               -webkit-animation:navfadeIn 0.2s linear; 
                          }
                @-webkit-keyframes navfadeIn{
                from{transform:scale(0);}
