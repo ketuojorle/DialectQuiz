@@ -678,16 +678,16 @@ ul#sitefooter li{
    grid-template-columns: auto auto auto;
    grid-gap:3px;
    justify-content: space-evenly;
-   padding:2px 5px;
+   padding:2px 15px;
 }
   
 .footerinfo >div{
    align-items:justify;
    color:white;
    background-color:black;
-   font-size:12px;
+   font-size:10px;
    font-weight: lighter;
-   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-family:Montserrat;
    text-align: center;
    padding:5px;
 }
@@ -745,10 +745,8 @@ ul#sitefooter li{
    iframe{ width : 250px; height: 250px;}
    .footerinfo{
       grid-template-columns: auto auto auto
-      grid-gap:10px;
-      padding:2px;
-      font-size:10px;
-   }
+     
+       }
                      
          }                       
                 
