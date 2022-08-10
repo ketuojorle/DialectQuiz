@@ -183,7 +183,7 @@
         questionContainer.innerHTML+= ` <legend><label for="optionA"> <input type='radio' value='A' id="optionA" name='choices'/> <b>A:</b>  ${chA} </label> </legend><br>`;
         questionContainer.innerHTML+= ` <legend><label for="optionB"><input type='radio' value='B' id="optionB" name='choices'/> <b>B:</b>  ${chB}  </label> </legend><br>`;
         questionContainer.innerHTML+= ` <legend><label for="optionC"><input type='radio' value='C' id="optionC" name='choices'/> <b>C:</b>  ${chC}  </label> </legend><br>`; 
-        PROGRESSBAR.innerHTML = " Question<span class='red' >"  +   (q +1 ) +  "</span> of <span class='blue' > " + QLen  + " </span>Questions";
+        PROGRESSBAR.innerHTML = " Question<span class='blue' >"  +   (q +1 ) +  "</span> of <span class='blue' > " + QLen  + " </span>Questions";
                                                             
         showAnimals();                   // THIS FUNCTION PRESENTS ANIMALS AND OTHER ITEMS PICTURES
         goTonextQuestion();          // THIS FUNCTION CREATES NEXT QUESTION BUTTON
