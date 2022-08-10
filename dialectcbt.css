@@ -341,12 +341,12 @@ to{transform:scale(1);}
  #animals-container{
               width: 200px;
               height : 175px;
-              position : absolute;
-              
+              position : relative;
+              float:right;
               box-sizing : border-box;
-              bottom : 2px;
-              right : 2px;
-              padding:2px;
+              margin-bottom : 1px;
+              margin-right : 1px;
+              padding:1px;
               }
 
 
