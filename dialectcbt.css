@@ -145,7 +145,7 @@
                 text-align : justify;
                 box-sizing : border-box;
                 padding :3px 7px 2px;
-                border :0px solid grey ;
+                border : ;
                 line-height:32px;
   
          }
@@ -754,8 +754,9 @@ ul#sitefooter li{
    #lectureVideo{width : 248px; height: 248px;}
    iframe{ width : 250px; height: 250px;}
    .footerinfo{
-      grid-template-columns: auto auto auto;
-      grid-gap:15px;
+     grid-template-columns: auto auto auto;
+      grid-template-rows: auto ;
+      grid-gap:10px;
       padding:2px;
       font-size:10px;
    }
