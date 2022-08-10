@@ -339,8 +339,8 @@ to{transform:scale(1);}
             }
 
  #animals-container{
-              width: 400px;
-              height : 350px;
+              width: 200px;
+              height : 175px;
               position : absolute;
               
               box-sizing : border-box;
@@ -351,8 +351,8 @@ to{transform:scale(1);}
 
 
  #animals-images{
-            width: 390px;
-            height:340px;
+            width: 198px;
+            height:173px;
              }
 
 p::first-letter{
@@ -748,8 +748,8 @@ ul#sitefooter li{
    @media only screen and (max-width :600px){  /*FOR SMALL SCREEN PHONES */
    .advert-container{ width : 250px; height: 250px;}
    .affiliateProductImage{ width : 248px; height: 248px;}
-   #animals-container{ width : 250px; height: 250px;}
-   #animals-images{width : 240px; height: 240px; }
+   #animals-container{ width : 200px; height: 175px;}
+   #animals-images{width : 198px; height: 173px; }
    #affiliate-imageDiv{ width : 249px; height: 249px;}
    #lectureVideo{width : 248px; height: 248px;}
    iframe{ width : 250px; height: 250px;}
