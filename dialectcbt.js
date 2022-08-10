@@ -180,9 +180,9 @@
         chB=Questions[q][2];
         chC=Questions[q][3];
         questionContainer.innerHTML= "<h4>"+question+ "</h4> <br>";
-        questionContainer.innerHTML+= ` <legend><label for="optionA"> <input type='radio' value='A' id="optionA" name='choices'/> <b>A:</b>  ${chA} </label> </legend><br>`;
-        questionContainer.innerHTML+= ` <legend><label for="optionB"><input type='radio' value='B' id="optionB" name='choices'/> <b>B:</b>  ${chB}  </label> </legend><br>`;
-        questionContainer.innerHTML+= ` <legend><label for="optionC"><input type='radio' value='C' id="optionC" name='choices'/> <b>C:</b>  ${chC}  </label> </legend><br>`; 
+        questionContainer.innerHTML+= ` <legend><label for="optionA"> <input type='radio' value='A' id="optionA" name='choices'/> A:  ${chA} </label> </legend><br>`;
+        questionContainer.innerHTML+= ` <legend><label for="optionB"><input type='radio' value='B' id="optionB" name='choices'/> B:  ${chB}  </label> </legend><br>`;
+        questionContainer.innerHTML+= ` <legend><label for="optionC"><input type='radio' value='C' id="optionC" name='choices'/> C:  ${chC}  </label> </legend><br>`; 
         PROGRESSBAR.innerHTML = " Question<span class='goldrod' >"  +   (q +1 ) +  "</span> of <span class='goldrod' > " + QLen  + " </span>Questions";
                                                             
         showAnimals();                   // THIS FUNCTION PRESENTS ANIMALS AND OTHER ITEMS PICTURES
