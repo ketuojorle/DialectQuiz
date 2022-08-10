@@ -26,6 +26,7 @@
   position :fixed;
   box-sizing:border-box;
   overflow-y:auto;
+  overflow-x:hidden;
   background-color : ;
   padding :;
                }
@@ -143,7 +144,7 @@
                 color:#000000;
                 text-align : justify;
                 box-sizing : border-box;
-                padding :3px 5px 2px;
+                padding :3px 7px 2px;
                 border :1px solid grey ;
                 line-height:32px;
   
