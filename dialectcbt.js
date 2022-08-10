@@ -308,10 +308,7 @@
                           imagePix=document.createElement('IMG');
                           imagePix.setAttribute("id", "animals-images" );
                           imagePix.src=imagePixSrc[k];
-                          imagePix.style.width="390px";
-                          imagePix.style.height="340px";
-                          imagePix.style.position="absolute"; 
-                          imagePix.style.margin="auto";
+                          
                           animalsContainer.appendChild(imagePix);
                           k++;
                              }
