@@ -708,7 +708,7 @@ ul#sitefooter li{
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
   #quizBox{padding:0px 120px;}
   #header{padding:;border: 1px solid grey; border-radius:3px 3px 0px 0px;}
-  #questionContainer{padding:0px 20px 5px;  font-size:18px;border: 1px solid grey;}
+  #questionContainer{padding:0px 20px 5px;  font-size:18px; font-family:Montserrat;border: 1px solid grey;}
   footer{padding:;border: 2px solid grey; border-radius:0px 0px 3px 3px;}
   .advert-container{ width : 400px; height: 400px;}
   .affiliateProductImage{ width : 398px; height: 398px;}
@@ -723,7 +723,7 @@ ul#sitefooter li{
    @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
    #quizBox{padding:0px 120px;}
    #header{padding:; border: 1px solid grey; border-radius:3px 3px 0px 0px;}
-   #questionContainer{padding:0px 20px 5px; font-size:18px;border: 1px solid grey;}
+   #questionContainer{padding:0px 20px 5px; font-size:18px; font-family:Montserrat;border: 1px solid grey;}
    footer{padding:0px;border: 1px solid black; border-radius:0px 0px 3px 3px;}
   .advert-container{ width : 400px; height: 400px;}
   .affiliateProductImage{ width : 398px; height: 398px;}
