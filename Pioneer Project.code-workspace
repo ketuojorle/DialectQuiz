@@ -2,6 +2,15 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\Desktop\\Calculator"
+		},
+		{
+			"path": "..\\Desktop\\votelator"
+		},
+		{
+			"path": "..\\Desktop\\martinsprofile"
 		}
 	],
 	"settings": {}
