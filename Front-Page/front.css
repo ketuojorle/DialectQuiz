@@ -13,7 +13,7 @@ body{
 
   /* BELOW IS THE CODE FOR FRONT PAGE */
   
-  #Fcontainer{
+  div.Fcontainer{
     width: 100%;
     height:100%;
     position:fixed;
@@ -22,19 +22,19 @@ body{
     font-size: 16px;
     font-family: Montserrat;
     font-weight: bold;
-    background-image: url(Front-Page/quicicon4.png);   
+    background-image:url('Front-Page/quicicon4.png');   
     background-size: cover;
     box-sizing: border-box;
  } 
 
- #Fmenu-bar{   
+ div.Fmenu-bar{   
     display:grid;
     grid-template-columns: auto auto auto ;
     grid-gap:0px;
     justify-content: space-evenly;
  }
 
- #Fmenu-bar>div{
+ div.Fmenu-bar>div{
     align-items:justify; 
     text-align: center;
     padding:0px;
@@ -46,16 +46,16 @@ body{
     color:green;
              }
        
- #Fmenu-bar>div,button:hover{
+ div.Fmenu-bar>div,button:hover{
          opacity:0.6;
                  }
 
- #Fmenu-bar >div, button>a.fpagemenu-anchor{
+ div.Fmenu-bar >div, button>a.fpagemenu-anchor{
  text-decoration: none;
 color:white;            
  }
          
-#Ffooter{
+ div.Ffooter{
     display:grid;
     grid-template-columns: auto auto auto;
     grid-gap:3px;
@@ -70,19 +70,19 @@ color:white;
     
     }  
 
- #Ffooter>div{
+    div.Ffooter>div{
 align-items:justify;
 padding:1px;
  }
                   
- #Ffooter>div>a.footanchor{
+ div.Ffooter>div>a.footanchor{
 text-decoration: none;
  color:white;
 font-weight: lighter;
      
  }
 
-#Ffooter>div>a.footanchor:hover{
+ div.Ffooter>div>a.footanchor:hover{
 cursor: pointer;
  border-radius:3px;
 font-weight: bold;
@@ -90,16 +90,16 @@ font-weight: bold;
   }
 
  @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
-    #Fcontainer{ font-size:18px;}
-    #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
-    #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+   div.Fcontainer{ font-size:18px;}
+   div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
+   div.Ffooter{grid-template-columns: auto auto auto auto auto;}  
     
     }
                 
  @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
-        #Fcontainer{ font-size:18px;}
-        #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
-        #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+   div.Fcontainer{ font-size:18px;}
+   div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
+   div.Ffooter{grid-template-columns: auto auto auto auto auto;}  
         
       
          }
