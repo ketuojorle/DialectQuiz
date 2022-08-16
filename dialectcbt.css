@@ -719,9 +719,7 @@ ul#sitefooter li{
 
 
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
-   #Fcontainer{padding:2px 10px 5px; font-size:18px;}
-   #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
-   #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+   
    body{padding:0px 120px;}
    #quizBox{ border:1px solid grey; }
    #questionContainer{padding:2px 10px 5px; font-size:18px;}
@@ -740,9 +738,7 @@ ul#sitefooter li{
                     }
 
    @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
-   #Fcontainer{padding: ; font-size:18px;}
-   #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
-   #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+  
    body{padding:0px 120px;}
    #quizBox{ border:1px solid grey; }
    #questionContainer{padding:2px 10px 5px; font-size:18px;}
