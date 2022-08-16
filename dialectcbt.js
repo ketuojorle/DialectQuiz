@@ -4,6 +4,17 @@
 
           
        window.addEventListener("load",function(){
+
+        //THE CODE FOR FRONT PAGE
+
+        let greetingBox= document.getElementById("greeting");
+        let ebuIntro = document.getElementById("ebu-intro"); 
+        let dailyHour = new Date().getHours;
+        if(dailyHour<12){greetingBox.innerHTML=`Hello, ewola Oruru!(Hello Good Morning!)`;
+         }else{
+            if(12< dailyHour && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka!(Hello Good Afternoon!`;}
+               else{if(dailyHour>16 &&dailyHour>22 ){greetingBox.innerHTML=`Hello, ewola aneh!(Hello Good Evening!`;} }
+         }
  
         let siteName =document.getElementById(" website-name" );
         siteName.onclick = function() {  window.location.reload(true); };
