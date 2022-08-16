@@ -351,11 +351,10 @@
                   stopTime();
                   stopWatch.innerHTML = " ";
                   PROGRESSBAR.innerHTML = "";
-                  questionContainer.innerHTML="<h4><b style='color:red;'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
+                  questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 280px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
                   questionContainer.style.textAlign="center";
-                  questionContainer.style.minHeight =`${400}px`;
+                  questionContainer.style.minHeight =`${600}px`;
                   questionContainer.style.border="0px solid grey";
-                  QUIZBOX.style.backgroundColor="#336699";
                   TOTESTPARA.appendChild( testInstructionButton);
                    testInstructionButton.setAttribute("value"," Check Your Score");
                    testInstructionButton.onclick= function(){ questionContainer.innerHTML =" ";
@@ -377,19 +376,19 @@
                            PROGRESSBAR.innerHTML = "";
                            stopWatch.innerHTML="<h4>You have completed the test</h4>";
                            stopWatch.style.textAlign="center";
-                           questionContainer.style.minHeight =`${400}px`;
-                           questionContainer.innerHTML="<h1>Thanks for taking the <br> Test</h1>";
+                           questionContainer.style.minHeight =`${600}px`;
+                           questionContainer.innerHTML="<h1 style='transform:translate(0px, 280px);'>Thanks for taking the <br> Test</h1>";
                            questionContainer.style.textAlign="center";
+                           
                            questionContainer.style.border="0px solid grey";
-                           QUIZBOX.style.backgroundColor= "#336699";
                            TOTESTPARA.appendChild( testInstructionButton);
                            testInstructionButton.setAttribute("value"," Check Your Score");
                            testInstructionButton.onclick= function(){ questionContainer.innerHTML =" ";
                                                                                      
                                                                                      displaytable();
                                                                                      questionContainer.appendChild(tableHidder);
-                                                                                     tableHidder.style.marginLeft = "25%";
-                                                                                     tableHidder.style.width = "500px";
+                                                                                     tableHidder.style.margin = "auto";
+                                                                                     tableHidder.style.width = "50%";
                                                                                      testInstructionButton.setAttribute("value","Go back home or Repeat Test");
                                                                                      testInstructionButton.onclick = function(){window.location.reload(true); };
                                                                                      };
@@ -495,7 +494,9 @@
              else{
                 productImage.src = imgUrl[imgIndex];
                   imgDiv.appendChild(productImage);
-                  advertContainer.appendChild(imgDiv);                      
+                  advertContainer.appendChild(imgDiv);
+                  advertContainer.style.display = "block" ;
+                  advertContainer.style.border = "1px solid grey" ;                     
                   imgIndex++;
                 
                           }
@@ -528,7 +529,7 @@
 
 
           
-                let affiliateAdvert = setTimeout( affiliateMarket,500);
+                let affiliateAdvert = setTimeout( affiliateMarket,20000);
          
                
 
@@ -729,6 +730,7 @@
                                     
 
 
+                                      
 
                              
              
