@@ -1,15 +1,19 @@
 {
 	"folders": [
 		{
+			"name": "DialectQuiz",
 			"path": "."
 		},
 		{
+			"name": "Calculator",
 			"path": "..\\Desktop\\Calculator"
 		},
 		{
+			"name": "votelator",
 			"path": "..\\Desktop\\votelator"
 		},
 		{
+			"name": "martinsprofile",
 			"path": "..\\Desktop\\martinsprofile"
 		}
 	],

@@ -1,0 +1,111 @@
+@import 
+url("https://fonts.googleapis.com/css?family=Raleway");
+@import 
+url("https://fonts.googleapis.com/css?family=Montserrat");
+@import 
+url("https://fonts.googleapis.com/css?family=Sofia");
+body{
+  margin:0px;
+  padding:0px;
+     }
+
+  /* BELOW IS THE CODE FOR FRONT PAGE */
+  
+  #Fcontainer{
+    width: 100%;
+    height:100%;
+    position:fixed;
+    margin: 0%;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: bold;
+    background-image: url(NetbizPhoto/quizicon4.png);   
+    background-size: cover;
+    box-sizing: border-box;
+ } 
+
+ #Fmenu-bar{   
+    display:grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap:0px;
+    justify-content: space-evenly;
+ }
+
+ #Fmenu-bar>div{
+    align-items:justify; 
+    text-align: center;
+    padding:0px;
+    border-radius: 4px;
+    font-size:12px;
+    font-weight:bold;
+    color:white;
+    background-color: black;
+    color:green;
+             }
+       
+ #Fmenu-bar>div,button:hover{
+         opacity:0.6;
+                 }
+
+ #Fmenu-bar >div, button>a.fpagemenu-anchor{
+ text-decoration: none;
+color:white;            
+ }
+         
+#Ffooter{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:3px;
+    justify-content:space-evenly;
+    padding:1px 1px;
+    color:white;
+    font-size:12px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0%;
+    position:relative;
+    
+    }  
+
+ #Ffooter>div{
+align-items:justify;
+padding:1px;
+ }
+                  
+ #Ffooter>div>a.footanchor{
+text-decoration: none;
+ color:white;
+font-weight: lighter;
+     
+ }
+
+#Ffooter>div>a.footanchor:hover{
+cursor: pointer;
+ border-radius:3px;
+font-weight: bold;
+
+  }
+
+ @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
+    #Fcontainer{padding:2px 10px 5px; font-size:18px;}
+    #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
+    #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+    
+    }
+                
+ @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
+        #Fcontainer{padding: ; font-size:18px;}
+        #Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
+        #Ffooter{grid-template-columns: auto auto auto auto auto;}  
+        
+      
+         }
+                                                                     
+@media only screen and (max-width :600px){  /*FOR SMALL SCREEN PHONES */
+   
+          }
+                              
+                                        
+                      
+                                                                                                                      
