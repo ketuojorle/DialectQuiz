@@ -5,16 +5,7 @@
           
        window.addEventListener("load",function(){
 
-        //THE CODE FOR FRONT PAGE
-
-        let greetingBox= document.getElementById("greeting");
-        let ebuIntro = document.getElementById("ebu-intro"); 
-        let dailyHour = new Date().getHours;
-        if(dailyHour<12){greetingBox.innerHTML=`Hello, ewola Oruru!(Hello Good Morning!)`;
-         }else{
-            if(12< dailyHour && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka!(Hello Good Afternoon!`;}
-               else{if(dailyHour>16 &&dailyHour>22 ){greetingBox.innerHTML=`Hello, ewola aneh!(Hello Good Evening!`;} }
-         }
+       
  
         let siteName =document.getElementById(" website-name" );
         siteName.onclick = function() {  window.location.reload(true); };
@@ -552,10 +543,7 @@
             function movingCharacters(){
                  let AdvertCharacters=` MTN 1GB = 250NGN MTN 2GB = 500<br>; MTN 3GB = 1000`;
                  let i =0;
-                 let speed = 100;
-            
-                 
-                 
+                 let speed = 100;                 
                 if(i < AdvertCharacters.length){
                     let move = setInterval(function(){
                     dataPrice.innerHTML += AdvertCharacters.charAt(i);
