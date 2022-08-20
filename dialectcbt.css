@@ -1071,36 +1071,7 @@ ul#sitefooter li{
                                             } 
                                             
    @media only screen and (orientation:landscape){  /*LANSCAPE ORIENTATION 
-                    div.Fcontainer{padding: 0px 2px 20px 2px; }
-                    #container-content{width:95%; height: 95%; padding:0px;}
-                    img.site-logo{width:30px; height:30px;}
-                    h1.frontpage-name{font-size: 16px; }
-               
-                    img.frontend-image{
-                     float:left;
-                     width:20%; 
-                     height:auto;
-                     background-color: rgba(255,255,255,0.2);
-                     background-position: center;
-                     border-radius: 60% 80% 80% 0%;
-                     border-top:3px solid #B8860B;
-                     border-right:4px solid #B8860B;
-                     border-bottom:5px solid #B8860B;  
-                     box-shadow: 0 8px 20px 7px rgba(247, 240, 240, 0.1);
-                     
-                    }
-                    #blackboard{
-                     width: 78%;
-                     height: 90%;
-                     border:1px solid white;
-                     box-shadow: 6px 8px 2px 0 rgba(0, 0, 0,0.4),
-                        8px 8px 2px 0 rgba(0, 0, 0,0.4);
-                    padding: 2px 5px 1px;
-                    font-size: 16px;                           
-                    }
-                    #greeting{font-size: 14px;}
-                    p.sample-question{font-size: 14px; }                  
-                    #frontend-button{bottom:25px;}
+                   
                    */                                                 }
        
                      
