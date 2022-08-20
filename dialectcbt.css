@@ -165,7 +165,7 @@ body{
             border-radius: 8px;
             box-shadow: 6px 8px 3px 0 rgba(0, 0, 0,0.4),
                         8px 8px 3px 0 rgba(0, 0, 0,0.4);
-            padding: 5px 10px 2px;
+            padding: 5px 10px 0px;
             font-size: 16px;
             font-family: montserrat;
             overflow: hidden;
@@ -197,17 +197,7 @@ body{
 
       
       }
-   p.portrait-sample-question{
-      font-size: 20px;
-      display:none;
-      text-align:left;
-      font-family: courier;
-      font-weight: bolder;
-      line-height:30px;
-      border-left: 2px solid white;
-      padding: 0px 0px 0px 5px;
-      border-left: 2px solid white;
-   }
+  
 
       form.sample-answers{
          text-align: left;
@@ -218,17 +208,7 @@ body{
       
       }
 
-      form.portrait-sample-answers{
-         display:none;
-         text-align: left;
-         font-family: courier;
-         font-weight: bold;
-         font-size: 18px;
-         border-left: 2px solid white;
-         padding: 0px 0px 0px 5px;
-      
-      }
-      
+     
       #ebu-intro{
          text-align: justify;
          transform:translate(0% ,0%);
