@@ -983,14 +983,21 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     div.Fcontainer{background-image:url(frontpagePix/cropped-sitescreenshot.png); background-origin: content-box; background-repeat: no-repeat;}
+                     div.Fcontainer{ }
                      #container-content{display:flex; flex-direction:column; width:100%; height:95%; background-color:rgba(255,255,255,0.1); border:1px solid white;padding:1px;} 
-                     img.frontend-image{display:;}
+                     img.frontend-image{
+                        float:inherit;
+                        border-radius:2px;
+                        border-top:2px solid #B8860B;
+                        border-right:5px solid #B8860B;
+                        border-bottom:5px solid #B8860B;  
+                                       }
+                        
                      #blackboard{display:;
                                  width:95%; height:91%; 
                                  margin:auto;
                                  border:1px solid white;
-                                 box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
+                                 box-shadow: 1px 1px 1px 1px rgba(0, 0, 0,0.4);
                                  padding: 3px 5px 1px;}
                      #greeting{font-size:12px;}
                      p.sample-question{ font-size:13px; }
