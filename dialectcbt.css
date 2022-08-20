@@ -983,8 +983,8 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     .Fcontainer{background-image:url(frontpagePix/cropped-sitescreenshot.png); background-size: cover; background-repeat: no-repeat;}
-                     #container-content{width:100%; height: 100%; background-color:rgba(255,255,255,0.1); border:1px solid white;padding:1px;} 
+                     div.Fcontainer{background-image:url(frontpagePix/cropped-sitescreenshot.png); background-size: cover; background-repeat: no-repeat;}
+                     #container-content{width:100%; height:95%; background-color:rgba(255,255,255,0.1); border:1px solid white;padding:1px;} 
                      img.frontend-image{display:none;}
                      #blackboard{display:none;
                                  width:95%; height:91%; 
