@@ -31,7 +31,7 @@ window.addEventListener("load",function(){
                           by the people of Ebu town in Oshimili North Local Government Area of Delta State, Nigeria.
                           Can you read and write in the dialect or you want to learn? Hmmm! very simple. At the end of
                           the tutorial video and quiz, you WILL be able to construct simple sentences in Ebu dialect.
-                           Just click the "Take Quiz" button below let us start.`;
+                           Just click the "Take Quiz" button.`;
                           
                   
     
