@@ -985,7 +985,7 @@ ul#sitefooter li{
    @media only screen and (orientation:portrait){  /*FOR SMALL SCREEN PHONES */
                      #container-content{width:100%; height: 90%; margin-bottom:0%;border:1px solid white;padding:1px;}
                      img.frontend-image{display:none;}
-                     #blackboard{width:95%; 
+                     #blackboard{width:95%; height:90%; 
                                  margin:auto;
                                  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
                                  padding: 3px 5px 1px;}
