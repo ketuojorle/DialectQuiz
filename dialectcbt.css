@@ -985,19 +985,19 @@ ul#sitefooter li{
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
                      #container-content{width:100%; height: 90%; margin-bottom:0%;border:1px solid white;padding:1px;}
                      img.frontend-image{display:none;}
-                     #blackboard{width:95%; height:93%; 
+                     #blackboard{width:95%; height:91%; 
                                  margin:auto;
                                  border:1px solid white;
                                  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
                                  padding: 3px 5px 1px;}
                      #greeting{font-size:12px;}
                      p.sample-question{ font-size:13px; }
-                     form.sample-answers{font-size:13px; }                    
+                                      
                      #frontend-button{font-size:13px; padding:2px 10px; border-bottom: 1px solid grey;}
                                             } 
                                             
    @media only screen and (orientation:landscape){  /*LANSCAPE ORIENTATION */
-                    #container-content{width:95%; height: 90%; margin-bottom:0%;border:1px solid white;padding:1px;}
+                    #container-content{width:95%; height: 95%; margin-bottom:0%;border:1px solid white;padding:1px;}
                     h1.frontpage-name{font-size:16px; }
                
                     img.frontend-image{width:30%;
@@ -1005,14 +1005,14 @@ ul#sitefooter li{
                                        border-right:7px solid #B8860B;
                                        border-bottom:9px solid #B8860B;  
                                        box-shadow: 0 3px 9px 2px rgba(247, 240, 240, 0.1);}
-                    #blackboard{width:95%; height:93%; 
+                    #blackboard{width:70%; height:91%; 
                                 margin:auto;
                                 border:1px solid white;
                                 box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
                                 padding: 3px 5px 1px;}
                     #greeting{font-size:12px;}
                     p.sample-question{ font-size:13px; }
-                    form.sample-answers{font-size:13px; }    
+                   
                     #frontend-button{font-size:13px; padding:2px 10px; border-bottom: 1px solid grey;}
                                                                     }
        
