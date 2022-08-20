@@ -363,9 +363,9 @@
                                                                                      
                                                                                      displaytable();
                                                                                      questionContainer.appendChild(tableHidder);
-                                                                                     tableHidder.style.marginLeft = "25%";
+                                                                             //        tableHidder.style.marginLeft = "25%";
                                                                                     
-                                                                                     tableHidder.style.width = "500px";
+                                                                             //        tableHidder.style.width = "500px";
                                                                                      testInstructionButton.setAttribute("value","Go back home or Repeat Test");
                                                                                      testInstructionButton.onclick = function(){window.location.reload(true); };
                                                                                      };
@@ -389,8 +389,8 @@
                                                                                      
                                                                                      displaytable();
                                                                                      questionContainer.appendChild(tableHidder);
-                                                                                     tableHidder.style.margin = "auto";
-                                                                                     tableHidder.style.width = "50%";
+                                                                                  //   tableHidder.style.margin = "auto";
+                                                                                 //    tableHidder.style.width = "50%";
                                                                                      testInstructionButton.setAttribute("value","Go back home or Repeat Test");
                                                                                      testInstructionButton.onclick = function(){window.location.reload(true); };
                                                                                      };
