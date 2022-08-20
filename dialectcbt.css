@@ -991,12 +991,7 @@ ul#sitefooter li{
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
    h1.frontpage-name{font-size: 30px;}
    div.Fcontainer{ font-size:18px;padding-bottom:5%;}
-   div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;} 
-   p.sample-question{display:; }
-   p.portrait-sample-question{display:;}
-   form.sample-answers{display:;} 
-   form.portrait-sample-answers{display:none;} 
-   #ebu-intro{ display:block;}                                        
+   div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                         
    div.Ffooter{grid-template-columns: auto auto auto auto auto;}    
    body{padding:0px 120px;}
    #quizBox{ border:1px solid grey; }
@@ -1018,12 +1013,7 @@ ul#sitefooter li{
    @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
       h1.frontpage-name{font-size: 30px;}
       div.Fcontainer{ font-size:18px;}
-      div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;} 
-      p.sample-question{display:; }
-      p.portrait-sample-question{display:;}
-      form.sample-answers{display:;} 
-      form.portrait-sample-answers{display:none;} 
-      #ebu-intro{ display:block;}                                         
+      div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                        
       div.Ffooter{grid-template-columns: auto auto auto auto auto;}  
    body{padding:0px 120px;}
    #quizBox{ border:1px solid grey; }
@@ -1062,12 +1052,8 @@ ul#sitefooter li{
                                  background-color:rgba(255,255,255,0.1);
                                  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0);
                                  padding: 3px 5px 1px;}
-                     #greeting{font-size:12px; color:black;}                     
-                     p.sample-question{display:none; font-size:13px;}
-                     p.portrait-sample-question{display:block;}
-                     form.sample-answers{display:none;} 
-                     form.portrait-sample-answers{display:block;} 
-                     #ebu-intro{ display:none; color: black;font-weight:bold; }                                 
+                     #greeting{font-size:12px; color:black;}                                       
+                     #ebu-intro{ color: black;font-weight:bold; }                                 
                      #frontend-button{
                         bottom:25px;                       
                         font-size: 12px;
