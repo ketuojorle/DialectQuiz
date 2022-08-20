@@ -4,10 +4,43 @@ url("https://fonts.googleapis.com/css?family=Raleway");
 url("https://fonts.googleapis.com/css?family=Montserrat");
 @import 
 url("https://fonts.googleapis.com/css?family=Sofia");
+url("https://fonts.googleapis.com/css?family=Condiment");
+
 body{
   margin:0px;
   padding:0px;
      }
+
+     #page-loader{
+     position: absolute;
+     display:block;
+     z-index: -1;
+     top:50%;
+     left:50%;
+     width: 50px;
+     height:50px;
+     border-radius: 50%;
+     border:8px solid grey;
+     border-top: 8px solid rgb(4, 92, 23);
+     border-bottom: 8px solid rgb(4, 92, 23);
+     -webkit-animation: spin 0.5s linear infinite;
+     animation: spin 0.5s linear infinite;
+
+     }
+     @-webkit-keyframes spin{
+      0%{-webkit-transform: rotate(0deg);
+          transform: rotate(0deg);}
+      100%{-webkit-transform: rotate(360deg);
+           transform: rotate(360deg);}
+          }
+         
+     @keyframes spin{
+     0%{-webkit-transform: rotate(0deg);
+         transform: rotate(0deg);}
+     100%{-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);}
+                }
+      
 
      div.Fcontainer{
       width: 100%;
@@ -18,52 +51,66 @@ body{
       font-size: 16px;
       font-family: Montserrat;
       font-weight: bold; 
-      background-image:url("quicicon4.png");
+      background-image:url("frontpagePix/fBackground.png");
       background-size: 100px; 
       background-attachment: fixed;
       background-repeat:repeat;
       box-sizing: border-box;
-      
+            
    } 
 
-   .containerContent{ 
-      width:90%;  
-      height:90%; 
+
+   #container-content{ 
+      width:80%;  
+      height:80%; 
       position:relative;
       margin:auto;
       margin-bottom: ;
       border: 2px solid white;
-      padding:5px;
+      border-radius: 7px;
+      padding:5px 20px 5px 5px;
       box-sizing: border-box;
+      background-color: rgba(255,255,255,1.0);
 
            }
 
    h1.frontpage-name{
       font-weight: bolder;
-      font-family: Montserrat;
-      word-spacing: 20px;
+      font-family:sofia;
+      word-spacing: 0px;
       text-shadow:1px 1px rgba(0,0,0, 0.5),
       2px 2px rgba(0,0,0, 0.5),
       3px 3px rgba(0,0,0, 0.5),
       4px 4px rgba(0,0,0, 0.5),
       5px 5px rgba(0,0,0, 0.5);
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0,0,0,0.8);
+      box-sizing: border-box;
+      font-size:16px;
 
    }
       
     #frontend-button{
       position:absolute;
-      bottom:80px;
-      right:40px;
+      z-index: 1;
+      bottom:20px;
+      left:40%;
       margin: auto;
       font-size: 16px;
-      padding:2px 5px;
-      width:300px;
+      padding:2px 20px;
+      width:;
       text-align: center;
       border:2px solid goldenrod;
       border-radius: 5px;
+      border-bottom: 3px solid grey;
       background-color:white;
       color: red;
+   }
+
+   #frontend-button:hover{
+      color:white;
+      background-color: greenyellow;
+      cursor: pointer;
+      font-weight: bold;
    }
 
   
@@ -82,8 +129,11 @@ body{
       float:left;
       width:40%; 
       height:auto;
-      background-color: rgba(0,0,0,0.6);
-      border-radius: 40% 60% 55% 40%;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 60% 80% 80% 0%;
+      border-top:12px solid #B8860B;
+      border-right:16px solid #B8860B;
+      border-bottom:20px solid #B8860B;  
       box-shadow: 0 8px 20px 7px rgba(247, 240, 240, 0.1);
       
       
@@ -105,14 +155,14 @@ body{
    
          #blackboard{
             width: 60%;
-            height: 68%;
+            height: 81%;
             background-color:black;
             color:#ffffff;
             position:relative;
             border:4px solid white;
             border-radius: 8px;
-            box-shadow: 6px 8px 3px 0 rgba(255, 255, 255, 1.0),
-                        8px 8px 3px 0 rgba(255, 255, 255, 1.0);
+            box-shadow: 6px 8px 3px 0 rgba(0, 0, 0,0.4),
+                        8px 8px 3px 0 rgba(0, 0, 0,0.4);
             padding: 5px 10px 2px;
             font-size: 16px;
             font-family: montserrat;
@@ -122,8 +172,10 @@ body{
 
       #greeting{
       color:white;
-      font-family: Raleway;
+      font-family:montserrat;
       word-spacing: 3px;
+      text-align: center;
+      font-size: 14px;
 
       }
 
@@ -131,6 +183,8 @@ body{
          text-align: left;
          font-family: courier;
          font-weight: bold;
+         border-left: 2px solid white;
+         padding: 0px 0px 0px 5px;
       
       }
 
@@ -138,17 +192,21 @@ body{
          text-align: left;
          font-family: courier;
          font-weight: bold;
+         border-left: 2px solid white;
+         padding: 0px 0px 0px 5px;
       
       }
       
       #ebu-intro{
          text-align: justify;
-         transform:translate(0% ,1%);
+         transform:translate(0% ,0%);
          line-height: 17px;
          font-size: 14px;
          font-family: courier;
          font-weight: lighter;
          color:white;
+         border-left: 2px solid white;
+         padding: 0px 0px 0px 5px;
          
       }
 
@@ -157,8 +215,8 @@ body{
                   grid-template-columns: auto auto auto ;
                   grid-gap:50px;
                   justify-content: center;
-                  margin-bottom: 5px;
-                  position: absolute;
+                  margin-bottom:0%;
+                  position:relative;
                   
                }
                div.Ffooter>div{
@@ -166,20 +224,16 @@ body{
                   text-align: center;
                   padding:0px;
                   border-radius: 4px;
-                  font-size:12px;
-                  font-weight:bold;
+                  font-family:montserrat;
+                  font-size:14px;
+                  font-weight:lighter;
                   color:white;
                   background-color: black;
                   color:white;
                   
                            }
               
-   div.Ffooter>div>a.footanchor:hover{
-                  cursor: pointer;
-                   border-radius:3px;
-                  font-weight: bold;
-                  
-                    }
+   
                     
 /* THE CODE FOR HOME PAGE */
    .quizWrapper{
@@ -211,8 +265,20 @@ body{
   margin: auto;
   position :relative;
   box-sizing:border-box;
-  
+  -webkit-animation-name: animatedHomepage;
+  -webkit-animation-duration: 4s;
+  animation-name: animatedHomepage;
+  animation-duration: 4s;
                }
+   @-webkit-keyframes animatedHomepage{
+      from{opacity:0}
+      to{opacity:1}
+   }
+
+   @keyframes animatedHomepage{
+      from{opacity:0}
+      to{opacity:1}
+   }
 
 
   #header{
@@ -221,7 +287,7 @@ body{
                 margin :0 ;
                 background-color:rgba(0,0,0, 0.9);
                 text-align:center ;
-                line-height:15px;
+                line-height:13px;
                 box-sizing:border-box;
          
                 
@@ -233,8 +299,7 @@ body{
                position:relative;
                background-color: black;
                text-align:center;
-               padding-top:5px;
-               padding-bottom:3px;
+               padding:2px 0px;
                margin:0;
                        
                }
@@ -256,6 +321,7 @@ body{
 
     #nav-modal{
                width:200px;
+               height:100px;
                display:none;
                z-index:1;
                position :absolute;
@@ -263,12 +329,11 @@ body{
                right : 0px;
                top:30px;
                bottom: -89px;
-               padding:5px 10px 2px 10px;
+               padding:5px 10px 2px;
                background-color: white;
                color:green;
                font-size:14px;
-               border:1px solid grey;
-            
+               border:1px solid grey;              
                animation:navfadeIn 0.2s linear;
                -webkit-animation:navfadeIn 0.2s linear; 
                          }
@@ -585,22 +650,19 @@ div.text-3d2{
   }
 
 
-
-span.steel{
-color:steelblue;
+span.greenyellow{
+   color:greenyellow;
+   font-weight : bold;
 }
 
-span.goldrod{
-color:#B8860B;
-background-color:black;
-font-size:15px;
+span.gold{
+color:gold;
 font-weight : bold;
 }
 
-span.blue{
-   color:steelblue;
+span.skyblue{
+   color:skyblue;
    font-weight : bold;
-  background-color:white;
       }
 
  a{
@@ -617,7 +679,7 @@ span.blue{
 
 marquee{
 width:100%;
-height:20px;
+height:15px;
 color:red;
 font-size:12px;
 font-weight: lighter;
@@ -890,6 +952,7 @@ ul#sitefooter li{
 
 
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
+   h1.frontpage-name{font-size: 20px;}
    div.Fcontainer{ font-size:18px;}
    div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
    div.Ffooter{grid-template-columns: auto auto auto auto auto;}    
@@ -911,6 +974,7 @@ ul#sitefooter li{
                     }
 
    @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
+      h1.frontpage-name{font-size: 20px;}
       div.Fcontainer{ font-size:18px;}
       div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
       div.Ffooter{grid-template-columns: auto auto auto auto auto;}  

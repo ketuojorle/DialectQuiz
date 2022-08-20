@@ -1,5 +1,16 @@
 window.addEventListener("load",function(){
      //THE CODE FOR FRONT PAGE
+     let LOADER = document.getElementById("page-loader");
+     let QUIZBOX = document.getElementById("quizBox");
+     let ContainerContent= document.getElementById("container-content");
+     let BOARD= document.getElementById("blackboard");
+
+     let frontPageButton= document.createElement("DIV");
+     frontPageButton.setAttribute("id", "frontend-button");
+     frontPageButton.innerHTML = "Take Quiz";
+     ContainerContent.appendChild(frontPageButton);
+     frontPageButton.onclick = function(){window.location.href="homepage.html"; homePageLoading();};
+
 
      let greetingBox= document.getElementById("greeting");
      let ebuIntro = document.getElementById("ebu-intro");
@@ -8,10 +19,10 @@ window.addEventListener("load",function(){
      let Year = new Date().getFullYear();
      let dailyHour = new Date().getHours();
 
-     if(dailyHour>=0 && dailyHour<12 ){greetingBox.innerHTML=`Hello, ewola Oruru! ( Hello, Good Morning! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup><br>Welcome to Ebu Dialect Quiz Time!`; 
-      }else if(dailyHour>=12 && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka! ( Hello, Good Afternoon! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup><br>Welcome to Ebu Dialect Quiz Time!`;
-      }else if(dailyHour>=16 && dailyHour<22 ){greetingBox.innerHTML=`Hello, ewola aneh! ( Hello, Good Evening! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup><br>Welcome to Ebu Dialect Quiz Time!`;
-      }else{greetingBox.innerHTML=`Hello, ka yire aneh? ( Hello, how are you tonight? )   <sup>Date :  ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup><br>Welcome to Ebu Dialect Quiz Time!`;}
+     if(dailyHour>=0 && dailyHour<12 ){greetingBox.innerHTML=`Hello, ewola Oruru! ( Hello, Good Morning! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`; 
+      }else if(dailyHour>=12 && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka! ( Hello, Good Afternoon! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;
+      }else if(dailyHour>=16 && dailyHour<22 ){greetingBox.innerHTML=`Hello, ewola aneh! ( Hello, Good Evening! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;
+      }else{greetingBox.innerHTML=`Hello, ka yire aneh? ( Hello, how are you tonight? )   <sup>Date :  ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;}
            
       let briefIntroduction;
       briefIntroduction= `My name is Martins Akpala. I will be your guide on this quiz. Ebu dialect is Igala language spoken 
@@ -37,7 +48,16 @@ window.addEventListener("load",function(){
 
     setTimeout(blackboardIntro,1000);
 
- 
+      let loadingDelay;
+    function homePageLoading(){
+
+     loadingDelay =setTimeout(loadHome,3000);
+    function loadHome(){
+      LOADER.style.display ="none";
+      QUIZBOX.style.display = "block";
+       
+    }
+    }
 
 
 

@@ -1,155 +1,40 @@
-<! doctype html  >
-
-
+<! doctype html >
 <html>
-<head>
+   <head>
     
-         <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <meta charset="UTF-8">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-         <link href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel = "stylesheet" >
+         
+         <link href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel = "stylesheet">
          <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
          <link rel="stylesheet"  type="text/css" href="dialectcbt.css"/>
-         <script src="dialectcbtJq.js"></script>
-         <script src="dialectcbt.js"></script>
+         <script src="frontendjs.js"></script>
 
         
-         <title>Ebu Dialect Quiz</title>
-</head>
- <body  onload=" " >
-    
-       
-            <div id ="quizBox">
+         <title>FRONT PAGE</title>
+   </head>
+   <body style="padding:0%;"> 
+        <div class="Fcontainer"> <div id="page-loader"></div>
+            <h1 class="frontpage-name" style="color:white;"><span><img src="frontpagePix/sitelogo.png" style="width:60px;height:60px;"/></span><span class="gold">ebu</span><span class="skyblue">Dia</span><span class="greenyellow">quiz</span></h1>
+          
+          <div id="container-content">
+            <img class="frontend-image"  src="frontpagePix/fullpix3.png"/>
+            <div id="blackboard">
+                <p id="greeting"> </p>
+                <p style="font-size:14px;">Welcome to <span class="gold">Ebu</span><span class="skyblue"> Dialect</span><span class="greenyellow"> Quiz</span> Time!</p><hr style="border:1px solid white;">
+                <p class="sample-question">Example :<br>5 + elu = k. Find the numeric values of "elu" and "k" in english language and ebu dialect respectively?<br>
+                 
+                 <form class="sample-answers">
+                    <input type="radio" value=" ">A.  four and ogwu-meji </input><br>
+                    <input type="radio" value=" ">B.  five and egwa </input><br>
+                    <input type="radio" value=" ">C.  fifty and egwa-mayuelu</input><br>
+                 </form>
+                </p>
+                <p id="ebu-intro"></p>
 
-                  <div  id="header"> 
-
-                          <div  class="header-bar">
-                                        <h  id =" website-name"  style="color:gold; font-size:20px;" >Ebu Dialect Quiz</h> <div id="nav-icon">&#9776;</div>  
-                                    
-                                        <div id="nav-modal" ><div id= "nav-close"  class="close">&times</div>
-                                                                             <p onclick ="window.location.reload(true);">Home</p>
-                                                                             <p   id="navToInstruction"> Take Quiz </p>
-                                                                        
-                                         </div> 
-                                       
-                                        
-                                        
-                                                                 
-                                                                        
-                                         
-
-                                      
-                                         
-                                        <marquee style="background-color:black;color:white;">
-                                          Searching for where to buy foodstuff? visit <b>Ebu</b> markets on every eke day and you will find all foodstuff you need.
-                                        </marquee>
-                                       
-                                 <!-- start of netbiz ad banner code  the code is hidden for now pending store link activation --> 
-                                        <a href="https://www.clubkonnect.com/?id=CK100121167" target="_blank"> 
-                                          <div class="footerinfo" style="grid-template-columns:auto; margin-bottom:0px;border-bottom:1px solid grey;border-bottom-right-radius:5px;border-top-right-radius:5px;padding:0px;height:80px;float:left;position:absolute; background:url(NetbizPhoto/tilebackground.jpg );background-size: 200px 100px;">
-                                              <div style=" background-color:rgba(255,255,255,0.1);color:green;"><h6 style="background-color:white;color:green;border-radius:3px; margin-top:0%;">NetbizTelecoms</h6><p style="font-size:8px;font-weight:bold;"><img id="network-logo" src=" " style="width:27px;height:27px;float:left;margin-left:0%;"/><div id ="data-cost" class="text-3d2" style="border-bottom-right-radius:5px; border-top-left-radius:3px; height:25px; position:absolute; right:0;bottom:0;padding:0px; background-color:rgba(255,255,255,1.0);color:red;font-size:12px;font-weight:bold;font-stretch:condensed;"></div></p></div>
-                                                
-                                           </div>
-                                           </a>
-                           <div class="menu-bar">
-                                                 <button id ="menuButton-forQuiz">Take Ebu Dialect Quiz</button>
-                                                 <button><a  class="menu-anchor" style="font-size:12px;
-                                                   font-family:Georgia, 'Times New Roman', Times, serif; font-weight: lighter;" href ="https://bit.ly/Telecom-vol2" target="_blank"> Data/Recharge Card Sale Ebook</a></button>
-                                                 <button><a  class="menu-anchor" style="font-size:12px;
-                                                   font-family:Georgia, 'Times New Roman', Times, serif;font-weight: lighter;" href ="https://fairmoney.app.link/referral?referral_code=HHG8Q" target="_blank"> Obtain Business Loan</a></button>
-                           </div>
-
-                          </div>  <!--END OF HEADER BAR -->
-                          <p  id="totestinstruction"></p>
-                           
-            
-              
-               <!-- END OF NETBIZ BANNER --> 
-                   
-                    <p>
-                       <span id ="stop-watch" style="color:white; text-align: center;font-weight: bold;font-size: 17px;"></span> <br>  
-                       <span id ="progress-bar" style="color:white; text-align: center;font-weight: bold;font-size: 17px;"></span>
-                    </p>
-                     <center><p id = "totestinstruction"></p> </center>
-                     
-                 </div>   <!-- header closing tag-->
-                 <div   id="questionContainer" class="questionContainer">
-                        
-                        <article>                  
-                                            <p>  <h4 style="color:steelblue;">Why Dialect Quiz?</h4>  
-                                                 Consequent upon the drastic decline in the use of Ebu dialect by the current generation of Ebu parents in 
-                                                the up bringing of their wards, i deem it very imperative to develop this platform aimed at tutoring kids of Ebu
-                                                origin as well as none-indigenes who are interested. This is to avoid the 
-                                                 dialect going into oblivion. Moreover, to know more about the Ebu people in Delta State of Nigeria.
-                                          </p> 
-                        </article>
-
-                              <!--AFFILIATE MARKETING CONTAINERS-->
-                       <article>
-                               <a href =" " id ="link"  target ="_blank" >
-                                 <div class ="advert-container" id= "fade-advert" ></div>
-                               </a> 
-                       </article>                          
-                                                               
-                                         
-
-                       <article>
-                                          <p>There is this wrong notion by most parents that children that speak their local dialects are academically backward.
-                                             When i was with Yale Foods Limited in Ibadan, Nigeria. The chinese engineer that came for the installation of a newly 
-                                             acquired biscuit packaging machines couldn't communicate in english. It was an interpreter that was employed for 
-                                             communication with his fellow Nigerian engineers. He could read the machine softwares coded in chinese and 
-                                             got the job done within the shortest time. So intelligence is not really a function of one's ability to speak 
-                                             english language only. Therefore, speaking of local dialects should be encouraged. Seems you are guilty of this? You need not,
-                                             You can start learning or teaching your kids and wards today.
-                                          </p>
-                                          <p>If not for anything, securitywise your dialect will be useful to you someday. Even if you live in a country with advanced 
-                                              security infrastructure which i in doubt if there is any with the current pace of global spread of insecurity. The proactiveness 
-                                              of the security systems of these advanced countries are beign preempted. Security alerts could be shared in local dialects 
-                                              among family members and this could help avert disaster.<br>A very good example was the 
-                                              <a JavaScript:void(0) href ="https://www.aljazeera.com/news/2022/2/3/biden-raid-in-syria-has-taken-isis-leader-off-the-battlefield " ; target="_blank" >
-                                               killing of ISIS leader Abu Ibrahim al-Qurayshi by the US Special forces</a> on the 2nd of February, 2022 in a counterterrorism 
-                                               mission in North-west Syria. Thirteen casualties was recorded during and after the raid. This includes six children and four women. This low figure was recorded definitely because
-                                               when the American forces landed with the attack helicopters, the services of a local was employed. The local communicated in arabic to occupants in the building and surroundings
-                                               to quickly vacate to a designated safer place because they were not aware that a terrorists leader dwells among them. Alot of them left the environ while the affected
-                                               wasn't lucky enough because the terrorist went suicidal by detonating the bomb in his jacket to avoid beign captured alive. Don't you think the casualties figure would have 
-                                               been more if not for the timely communication in  the local dialect? I guess your answer will definitely be "YES" as mine. 
-                                               You think you are good in Ebu dialect or you want to learn? Let's learn by watching the tutorial video and then we evaluate your competence from the quiz score.
-                                             
-                                        </p> 
-                       </article>
-                                    
-                               
-                     </div> <!-- questionContainer close tag-->
+            </div> <!-- CONTENT-CONTAINER CLOSING TAG-->
+           
          
-                     <div id = "table-hidder" class="table-modal">
-                            <div class="close"  id="ansClose">&times</div>
-                            <center><h5>Examination Answer Sheet</h5></center>
-                             <table>
-                                    <tr><td>Attempted Question(s) :  </td><td><input type="text"   id ="attempted" disabled></input></td></tr>
-                                    <tr><td>Unattempted Question(s) :</td><td><input type="text"  id ="unattempted" disabled></input></td></tr>
-                                    <tr><td>Total Score : </td><td><input type="text" placeholder="0"  id ="score" disabled></input></td></tr>
-                                    <tr><td>Percentage Score : </td><td><input type="text" placeholder="0"  id ="Percent" disabled></input></td></tr>
-                             </table>
-                             <br>
-                             <p>Remark :<span class="blue" id ="remark" style="font-family:Sofia;"></span></p>
-                             
-                            <table id = "mytable"></table>
-                         </div>        
-                 <footer>
-                      <div class="footerinfo">
-                         <div><a class="footanchor" href="https://bit.ly/Telecom-vol2" target="_blank"><p><span class="glyphicon glyphicon-download-alt" style="font-size:20px; float: center;"></span><br>
-                             Data/Recharge Business</p></a></div> 
-                        <div><a  class="footanchor" href="https://fairmoney.app.link/referral?referral_code=HHG8Q" target="_blank"><p>Obtain Business Loan</p></a>
-                        </div>
-                         <div><h6>Developed By : </h6><p>Martins Ketuojorle AKPALA.</p>
-                         </div>
-                         <div ><p><span class="glyphicon glyphicon-earphone" style="font-size:20px;"></span><br>09048382519</p></div>
-                         <div ><p><span class="glyphicon glyphicon-envelope" style="font-size:20px;"></span><br>akpascomartino@gmail.com</p></div> 
-                      </div>
-                        
-       
-                </footer>
-           </div> <!--quizBox close tag-->
-       
-     </body>
+        </div> <!-- FCONTAINER CLOSING TAG--><div class="Ffooter"><div>Copyright <span class="glyphicon glyphicon-copyright-mark" style="font-size:13px;"></span> 2022 Martins K. Akpala</div></div>
+    </body>
 </html>
