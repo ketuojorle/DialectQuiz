@@ -417,11 +417,12 @@ body{
 .table-modal{
 width:100%;
 text-align :left;
-position:relative;
-margin:auto;
+position:absolute;
 display:none;
-top:0%;
-padding: 1px 3px;
+top:0px;
+left:0px;
+box-sizing: border-box;
+padding: 1px 5px;
 scroll-y: auto;
 background-color:white;
 border:2px solid grey;
@@ -449,6 +450,7 @@ to{transform:scale(1);}
 
 .close:hover{
            color:red;
+           font-weight: bolder;
            
 
             }
@@ -502,7 +504,7 @@ to{transform:scale(1);}
 
   .advert-container{
   width: 98%;
-  height :500px;
+  height :400px;
   margin :auto;
   box-sizing : border-box;
   justify-content:center;
@@ -515,13 +517,13 @@ to{transform:scale(1);}
 
    .affiliateProductImage{
               width: 96%;
-              height :498px; 
+              height :398px; 
               box-sizing: border-box;
               padding: 1px;
                     }
 
    #affiliate-imageDiv{width:94%;
-                      height:496px;
+                      height:396px;
                      position:absolute;
                      animation-name:jumia;
                      animation-duration:0.2s;

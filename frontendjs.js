@@ -4,6 +4,7 @@ window.addEventListener("load",function(){
      let QUIZBOX = document.getElementById("quizBox");
      let ContainerContent= document.getElementById("container-content");
      let BOARD= document.getElementById("blackboard");
+     let DATEBOX = document.getElementById("date-container");
 
      let frontPageButton= document.createElement("DIV");
      frontPageButton.setAttribute("id", "frontend-button");
@@ -18,12 +19,13 @@ window.addEventListener("load",function(){
      let monthOfTheYear = new Date().getMonth();
      let Year = new Date().getFullYear();
      let dailyHour = new Date().getHours();
-
-     if(dailyHour>=0 && dailyHour<12 ){greetingBox.innerHTML=`Hello, ewola Oruru! ( Hello, Good Morning! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`; 
-      }else if(dailyHour>=12 && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka! ( Hello, Good Afternoon! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;
-      }else if(dailyHour>=16 && dailyHour<22 ){greetingBox.innerHTML=`Hello, ewola aneh! ( Hello, Good Evening! )   <sup>Date : ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;
-      }else{greetingBox.innerHTML=`Hello, ka yire aneh? ( Hello, how are you tonight? )   <sup>Date :  ${dayOfTheMonth}/ ${monthOfTheYear + 1}/ ${Year}</sup>`;}
-           
+ 
+     if(dailyHour>=0 && dailyHour<12 ){greetingBox.innerHTML=`Hello, ewola Oruru! ( Hello, Good Morning! ) `; 
+      }else if(dailyHour>=12 && dailyHour<16){greetingBox.innerHTML=`Hello, ewola ohoka! ( Hello, Good Afternoon! ) `;
+      }else if(dailyHour>=16 && dailyHour<22 ){greetingBox.innerHTML=`Hello, ewola aneh! ( Hello, Good Evening! ) `;
+      }else{greetingBox.innerHTML=`Hello, ka yire aneh? ( Hello, how are you tonight? ) `;}
+     
+      DATEBOX.innerHTML = `<strong>Date :  ${dayOfTheMonth} / ${monthOfTheYear + 1} / ${Year} </strong>`;
       let briefIntroduction;
       briefIntroduction= `My name is Martins Akpala. I will be your guide on this quiz. Ebu dialect is Igala language spoken 
                           by the people of Ebu town in Oshimili North Local Government Area of Delta State, Nigeria. It is
