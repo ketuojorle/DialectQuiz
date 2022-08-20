@@ -1020,14 +1020,14 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     div.Fcontainer{padding: 0px 0px 20px 0px; }
+                     div.Fcontainer{padding: 0px 20px 20px 20px; }
                      #container-content{background-image:url(frontpagePix/ebumasq.png); background-size:cover; background-repeat:no-repeat; 
-                                        background-position:center; display:flex; flex-direction:column; width:100%; height:90%; background-color:rgba(255,255,255,1.0);
+                                        background-position:center; display:flex; flex-direction:column; width:96%; height:90%; background-color:rgba(255,255,255,1.0);
                                         border:1px solid goldenrod; padding:1px;} 
                      img.frontend-image{
                                        display:none;
                                        }                       
-                     #blackboard{width:95%; height:88%; 
+                     #blackboard{width:94%; height:88%; 
                                  border:0px solid white;
                                  margin:auto;
                                  color:black;
