@@ -177,13 +177,23 @@ body{
       }
 
       p.sample-question{
+         display:none;
          text-align: left;
          font-family: courier;
          font-weight: bold;
          border-left: 2px solid white;
          padding: 0px 0px 0px 5px;
+         text-align: left;
+         font-family: courier;
+         font-weight: bold;
+         border-left: 2px solid white;
+         padding: 0px 0px 0px 5px;
+
       
       }
+   p.portrait-sample-question{
+      font-size: 18px;
+   }
 
       form.sample-answers{
          text-align: left;
@@ -1006,8 +1016,9 @@ ul#sitefooter li{
                                  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0);
                                  padding: 3px 5px 1px;}
                      #greeting{font-size:12px; color:black;}
-                     p.sample-question{ font-size:13px;} 
-                     #ebu-intro{color: black;font-weight:bold; }                                 
+                     p.portrait-sample-question{display:block;}
+                     p.sample-question{display:none; font-size:13px;} 
+                     #ebu-intro{ display:none; color: black;font-weight:bold; }                                 
                      #frontend-button{
                         bottom:30px;                       
                         font-size: 12px;
