@@ -425,6 +425,7 @@ body{
                 font-size: 16px;
                 color:#000000;
                 text-align : justify;
+                word-wrap: normal;
                 box-sizing : border-box;
                 padding :3px 7px 2px;
                 border : ;
