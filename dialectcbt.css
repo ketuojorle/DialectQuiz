@@ -937,7 +937,18 @@ ul#sitefooter li{
    color:white;
 }
 
+.answerSheet-parameters{
+   display:grid;
+   grid-template-columns: auto auto;
+   grid-gap:3px;
+   justify-content:space-evenly;
+   padding:1px 2px;
 
+}
+
+.answerSheet-parameters>div{
+    text-align: left;
+}
 .footerinfo{
    display:grid;
    grid-template-columns: auto auto auto;

@@ -120,12 +120,21 @@
                      <div id = "table-hidder" class="table-modal">
                             <div class="close"  id="ansClose">&times</div>
                             <center><h5>Examination Answer Sheet</h5></center>
-                             <table style="margin:auto;">
+
+                            <div class="answerSheet-parameters">
+                              <div>Attempted Question(s) :  </div><div><input type="text"   id ="attempted" disabled></input></div>
+                              <div>Unattempted Question(s) :</div><div><input type="text"  id ="unattempted" disabled></input></div>
+                              <div>Total Score : </div><div><input type="text" placeholder="0"  id ="score" disabled></input></div>
+                              <div>Percentage Score : </div><div><input type="text" placeholder="0"  id ="Percent" disabled></input></div>
+                            </div>
+
+                          <!--  <table style="margin:auto;">
                                     <tr><td>Attempted Question(s) :  </td><td><input type="text"   id ="attempted" disabled></input></td></tr>
                                     <tr><td>Unattempted Question(s) :</td><td><input type="text"  id ="unattempted" disabled></input></td></tr>
                                     <tr><td>Total Score : </td><td><input type="text" placeholder="0"  id ="score" disabled></input></td></tr>
                                     <tr><td>Percentage Score : </td><td><input type="text" placeholder="0"  id ="Percent" disabled></input></td></tr>
                              </table>
+                            -->
                              <br>
                              <p>Remark :<span class="blue" id ="remark" style="font-family:Sofia;"></span></p>
                              
