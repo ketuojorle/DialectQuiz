@@ -1001,11 +1001,11 @@ ul#sitefooter li{
                     h1.frontpage-name{font-size:16px; }
                
                     img.frontend-image{width:30%;
-                                       border-top:5px solid #B8860B;
-                                       border-right:7px solid #B8860B;
-                                       border-bottom:9px solid #B8860B;  
+                                       border-top:3px solid #B8860B;
+                                       border-right:4px solid #B8860B;
+                                       border-bottom:5px solid #B8860B;  
                                        box-shadow: 0 3px 9px 2px rgba(247, 240, 240, 0.1);}
-                    #blackboard{width:70%; height:91%; 
+                    #blackboard{width:; height:85%; 
                                 margin:auto;
                                 border:1px solid white;
                                 box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
