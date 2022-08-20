@@ -1023,7 +1023,7 @@ ul#sitefooter li{
                      div.Fcontainer{padding: 0px 20px 20px 20px; }
                      #container-content{background-image:url(frontpagePix/ebumasq.png); background-size:cover; background-repeat:no-repeat; 
                                         background-position:center; display:flex; flex-direction:column; width:96%; height:90%; background-color:rgba(255,255,255,1.0);
-                                        border:1px solid goldenrod; padding:1px;} 
+                                        border:3px solid goldenrod; padding:1px;} 
                      img.frontend-image{
                                        display:none;
                                        }                       
