@@ -416,11 +416,11 @@ body{
 
 .table-modal{
 width:100%;
-text-align :left;
-position:absolute;
+text-align :center;
+position:relative;
 display:none;
+margin:auto;
 top:0px;
-left:0px;
 box-sizing: border-box;
 padding: 1px 5px;
 scroll-y: auto;
@@ -803,6 +803,7 @@ text-align:justify;
 padding:20px;
 border:1px grey;
 border-radius:2px;
+margin:auto;
 }
 
 table,th{
