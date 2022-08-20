@@ -983,9 +983,10 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     #container-content{width:100%; height: 90%; margin-bottom:0%;border:1px solid white;padding:1px;}
+                     #container-content{width:100%; height: 100%; margin-bottom:; background-image:url(frontpagePix/cropped-sitescreenshot.png); border:1px solid white;padding:1px;} 
                      img.frontend-image{display:none;}
-                     #blackboard{width:95%; height:91%; 
+                     #blackboard{display:none;
+                                 width:95%; height:91%; 
                                  margin:auto;
                                  border:1px solid white;
                                  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
@@ -997,23 +998,15 @@ ul#sitefooter li{
                                             } 
                                             
    @media only screen and (orientation:landscape){  /*LANSCAPE ORIENTATION */
-                    #container-content{width:95%; height: 95%; margin-bottom:0%;border:1px solid white;padding:1px;}
-                    h1.frontpage-name{font-size:16px; }
+                    #container-content{}
+                    h1.frontpage-name{ }
                
-                    img.frontend-image{width:30%;
-                                       border-top:3px solid #B8860B;
-                                       border-right:4px solid #B8860B;
-                                       border-bottom:5px solid #B8860B;  
-                                       box-shadow: 0 3px 9px 2px rgba(247, 240, 240, 0.1);}
-                    #blackboard{width:; height:85%; 
-                                margin:auto;
-                                border:1px solid white;
-                                box-shadow: 1px 1px 1px 0 rgba(0, 0, 0,0.4);
-                                padding: 3px 5px 1px;}
-                    #greeting{font-size:12px;}
-                    p.sample-question{ font-size:13px; }
+                    img.frontend-image{}
+                    #blackboard{}
+                    #greeting{}
+                    p.sample-question{ }
                    
-                    #frontend-button{font-size:13px; padding:2px 10px; border-bottom: 1px solid grey;}
+                    #frontend-button{}
                                                                     }
        
                      
