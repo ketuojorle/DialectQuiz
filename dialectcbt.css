@@ -952,7 +952,7 @@ ul#sitefooter li{
 
 
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
-   h1.frontpage-name{font-size: 20px;}
+   h1.frontpage-name{font-size: 25px;}
    div.Fcontainer{ font-size:18px;}
    div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
    div.Ffooter{grid-template-columns: auto auto auto auto auto;}    
@@ -974,7 +974,7 @@ ul#sitefooter li{
                     }
 
    @media only screen and (min-width :600px){  /* FOR LARGE PHONES AND TABLETS */
-      h1.frontpage-name{font-size: 20px;}
+      h1.frontpage-name{font-size: 25px;}
       div.Fcontainer{ font-size:18px;}
       div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
       div.Ffooter{grid-template-columns: auto auto auto auto auto;}  
