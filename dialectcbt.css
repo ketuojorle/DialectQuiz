@@ -177,7 +177,7 @@ body{
       }
 
       p.sample-question{
-         display:none;
+         
          text-align: left;
          font-family: courier;
          font-weight: bold;
@@ -192,10 +192,31 @@ body{
       
       }
    p.portrait-sample-question{
-      font-size: 18px;
+      font-size: 20px;
+      display:none;
+      text-align: left;
+      font-family: courier;
+      font-weight: bold;
+      border-left: 2px solid white;
+      padding: 0px 0px 0px 5px;
+      text-align: left;
+      font-family: courier;
+      font-weight: bold;
+      border-left: 2px solid white;
+      padding: 0px 0px 0px 5px;
    }
 
       form.sample-answers{
+         text-align: left;
+         font-family: courier;
+         font-weight: bold;
+         border-left: 2px solid white;
+         padding: 0px 0px 0px 5px;
+      
+      }
+
+      form.portrait-sample-answers{
+         display:nonoe;
          text-align: left;
          font-family: courier;
          font-weight: bold;
@@ -1015,9 +1036,11 @@ ul#sitefooter li{
                                  background-color:rgba(255,255,255,0.5);
                                  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0);
                                  padding: 3px 5px 1px;}
-                     #greeting{font-size:12px; color:black;}
+                     #greeting{font-size:12px; color:black;}                     
+                     p.sample-question{display:none; font-size:13px;}
                      p.portrait-sample-question{display:block;}
-                     p.sample-question{display:none; font-size:13px;} 
+                     form.sample-answers{display:none;} 
+                     form.portrait-sample-answers{display:block;} 
                      #ebu-intro{ display:none; color: black;font-weight:bold; }                                 
                      #frontend-button{
                         bottom:30px;                       

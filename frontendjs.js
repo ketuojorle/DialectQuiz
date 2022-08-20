@@ -25,7 +25,7 @@ window.addEventListener("load",function(){
       }else if(dailyHour>=16 && dailyHour<22 ){greetingBox.innerHTML=`Hello, ewola aneh! ( Hello, Good Evening! ) `;
       }else{greetingBox.innerHTML=`Hello, ka yire aneh? ( Hello, how are you tonight? ) `;}
      
-      DATEBOX.innerHTML = `<strong>Date :  ${dayOfTheMonth} / ${monthOfTheYear + 1} / ${Year} </strong>`;
+      DATEBOX.innerHTML = `<strong>Today's Date :  ${dayOfTheMonth} / ${monthOfTheYear + 1} / ${Year} </strong>`;
       let briefIntroduction;
       briefIntroduction= `My name is Martins Akpala. I am your anchor on the quiz. Ebu dialect is Igala language spoken 
                           by the people of Ebu town in Oshimili North Local Government Area of Delta State, Nigeria.
