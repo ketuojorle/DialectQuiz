@@ -8,7 +8,7 @@ window.addEventListener("load",function(){
      let frontPageButton= document.createElement("DIV");
      frontPageButton.setAttribute("id", "frontend-button");
      frontPageButton.innerHTML = "Take Quiz";
-     ContainerContent.appendChild(frontPageButton);
+     BOARD.appendChild(frontPageButton);
      frontPageButton.onclick = function(){window.location.href="homepage.html"; homePageLoading();};
 
 
