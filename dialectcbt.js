@@ -163,7 +163,7 @@
                        ["Simplify (<span class='skyblue'>egwe-elu</span>)2 + <span class='skyblue'>ogwu</span>  ","152","105","50","C"],
                        ["<span class='skyblue'>Onka</span> means -----?","11","1","21","B"],
                        ["<span class='skyblue'>Egwa-onka</span> means -----?","Eleven","Seven","One","A"],
-                       ["<span class='skyblue'>Ogwu-mu-eji</span> means -----?","20 + 2","20 x 2","20 x 20","B"],
+                       ["<span class='skyblue'>Ogwu-meji</span> means -----?","20 + 2","20 x 2","20 x 20","B"],
                        ["<span class='skyblue'>Ogwu-mayu-eji</span> means -----?","22","40","20 - 2","A"]
                        ];
                      //<span class="skyblue"><i></i></span> ["Q5","A5","B5","C5","A"],   THIS FOR FUTURE USE, TO SAVE TIME WRITING ANOTHER CODE

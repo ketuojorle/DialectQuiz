@@ -62,7 +62,7 @@ body{
 
 
    #container-content{ 
-      width:80%;  
+      width:95%;  
       height:; 
       position:relative;
       margin:auto;
@@ -94,7 +94,7 @@ body{
     #frontend-button{
       position:absolute;
       bottom:0px;
-      left:45%;
+      left:43%;
       margin: auto;
       font-size: 16px;
       padding:2px 20px;
@@ -321,6 +321,7 @@ body{
                 text-align:center ;
                 line-height:13px;
                 box-sizing:border-box;
+                padding: 0px 0px 1px;
          
                 
   }
@@ -336,12 +337,12 @@ body{
                        
                }
    
-   #nav-icon{
+   #nav-icon{width: 100px;
              position:relative;
              float: right;
-             font-size:25px;
+             font-size:30px;
              color:white;
-             right:2px;
+             right:5px;
                
             }
 
@@ -989,7 +990,7 @@ ul#sitefooter li{
 
 @media only screen and (min-width :768px){  /* LANDSCAPE TABLETS, LAPTOPS, DESKTOPS*/
    h1.frontpage-name{font-size: 30px;}
-   div.Fcontainer{ font-size:18px;padding-bottom:6%;}
+   div.Fcontainer{ font-size:18px;padding-bottom:5%;}
    div.Fmenu-bar{ grid-template-columns: auto auto auto auto auto;}                                       
    div.Ffooter{grid-template-columns: auto auto auto auto auto;}    
    body{padding:0px 120px;}
