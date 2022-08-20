@@ -983,7 +983,8 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     #container-content{width:100%; height: 100%; margin-bottom:; background-image:url(frontpagePix/cropped-sitescreenshot.png); border:1px solid white;padding:1px;} 
+                     .Fcontainer{background-image:url(frontpagePix/cropped-sitescreenshot.png); background-size: cover; background-repeat: no-repeat;}
+                     #container-content{width:100%; height: 100%; margin-bottom:; border:1px solid white;padding:1px;} 
                      img.frontend-image{display:none;}
                      #blackboard{display:none;
                                  width:95%; height:91%; 
