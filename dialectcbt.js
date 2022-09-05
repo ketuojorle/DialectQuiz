@@ -107,7 +107,7 @@
         let HEADER =document.getElementById("header") ;
         
         let testInstruction =  ' <center><iframe  id="lectureVideo" src="https://www.youtube.com/embed/b5EToqFCx2c?autoplay = 0" ></iframe> </center> <br> '+
-        " <p style= 'text-align:justify;'>Kindly adhere to instructions below before you commence the <span class='blue'>40</span>multiple options quiz for <span class='blue'>4</span> minutes for optimal performance. <br>" +
+        " <p style= 'text-align:justify;'>Kindly adhere to instructions below before you commence the <span class='blue'>40</span>multiple options quiz for <span class='blue'>5</span> minutes for optimal performance. <br>" +
              "<b>Instructions:</b><br>" +
            "1. Watch the short <b>Tutorial video</b> for more knowledge .<br> "  +
              "2. Click on the above red button to start.<br> " +
@@ -329,7 +329,7 @@
       
        function testTimer(){
         let s=60;
-        let m= 3;
+        let m= 4; 
         let secLabel="secs";
         let minLabel="mins";
         let t;
@@ -338,8 +338,7 @@
         function stopTime(){clearInterval(t);} 
                  
         function TimeCount(){  
-         // let test1 = document.getElementById("mypara1");  
-          stopWatch.innerHTML ="Remaining Time:" +m+minLabel+" " +s + secLabel +"";
+         stopWatch.innerHTML ="Remaining Time:" + m + minLabel+ "" +s + secLabel +"";  
           s--;
          if(s<=1){secLabel="sec";} else{if(s>1 &&s<=60){secLabel=secLabel;}}
          if(m<=1){minLabel="min";}else{minLabel=minLabel;}

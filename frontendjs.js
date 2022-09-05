@@ -6,12 +6,21 @@ window.addEventListener("load",function(){
      let BOARD= document.getElementById("blackboard");
      let DATEBOX = document.getElementById("date-container");
 
-     let frontPageButton= document.createElement("DIV");
+  //THIS FUNCTION CREATES FRONT PAGE BUTTON THAT DIRECTS TO THE HOME PAGE
+    let frontPageButton= document.createElement("DIV");
      frontPageButton.setAttribute("id", "frontend-button");
      frontPageButton.innerHTML = "Take Quiz";
      BOARD.appendChild(frontPageButton);
      frontPageButton.onclick = function(){window.location.href="homepage.html"; homePageLoading();};
+     
+       let websiteNameElement =document.createElement("h");
+       websiteNameElement.setAttribute('class', 'SITENAME');
+       websiteNameElement.innerHTML = `<img class="site-logo" src="frontpagePix/sitelogo.png"/></span><span class="gold">Ebu</span><span class="skyblue">Dia</span><span class="greenyellow">quiz</span></h1>`;
+       ContainerContent.appendChild(websiteNameElement);
+       
+    
 
+   
 
      let greetingBox= document.getElementById("greeting");
      let ebuIntro = document.getElementById("ebu-intro");
@@ -49,11 +58,11 @@ window.addEventListener("load",function(){
 
     setTimeout(blackboardIntro,1000);
 
-      let loadingDelay;
-    function homePageLoading(){
 
+    let loadingDelay;
+    function homePageLoading(){
      loadingDelay =setTimeout(loadHome,3000);
-    function loadHome(){
+     function loadHome(){
       LOADER.style.display ="none";
       QUIZBOX.style.display = "block";
        
