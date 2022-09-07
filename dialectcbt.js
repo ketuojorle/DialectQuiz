@@ -352,7 +352,7 @@
                   stopTime();
                   stopWatch.innerHTML = " ";
                   PROGRESSBAR.innerHTML = "";
-                  questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 280px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
+                  questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 240px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
                   questionContainer.style.textAlign="center";
                   questionContainer.style.minHeight =`${600}px`;
                   questionContainer.style.border="0px solid grey";
@@ -378,7 +378,7 @@
                            stopWatch.innerHTML="<h4>You have completed the test</h4>";
                            stopWatch.style.textAlign="center";
                            questionContainer.style.minHeight =`${600}px`;
-                           questionContainer.innerHTML="<h1 style='transform:translate(0px, 280px);'>Thanks for taking the <br> Test</h1>";
+                           questionContainer.innerHTML="<h1 style='transform:translate(0px, 240px);'>Thanks for taking the <br> Test</h1>";
                            questionContainer.style.textAlign="center";
                            
                            questionContainer.style.border="0px solid grey";
