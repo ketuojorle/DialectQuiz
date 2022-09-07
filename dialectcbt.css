@@ -1080,7 +1080,10 @@ ul#sitefooter li{
                                     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0);
                                     padding: 100px 3px 0px;}   
 
-                     #greeting{font-size:12px; color:black;}                                       
+                     #greeting{font-size:12px; color:black;}
+                     #topic-underline{
+                              border:0px solid white;
+                     }                                       
                      #ebu-intro{ color: black;font-weight:bold; }                                 
                      #frontend-button{
                         bottom:4px;                       
