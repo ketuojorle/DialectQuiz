@@ -1040,7 +1040,7 @@ ul#sitefooter li{
                    #container-content{ display:block; 
                                       width:100%; 
                                       height:98%; 
-                                      margin-top: 2%;
+                                      margin-bottom: 0%;
                                       border:0px solid goldenrod; 
                                       padding:0px;
                                       box-sizing: border-box;
@@ -1053,7 +1053,7 @@ ul#sitefooter li{
                                        
                   #frontpix-container{
                                       width: 99%;
-                                      height: 99%;
+                                      height: 100%;
                                       position:relative;
                                       margin:auto;
                                       z-index: 1;
@@ -1068,12 +1068,12 @@ ul#sitefooter li{
                                  padding: 3px 5px 1px;} */
 
                                  #blackboard{
-                                    width:99%; 
+                                    width:100%; 
                                     height:99%;
                                     position:absolute; 
                                     margin:auto;
                                     z-index:4;
-                                    bottom:5px;
+                                    bottom:0px;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
