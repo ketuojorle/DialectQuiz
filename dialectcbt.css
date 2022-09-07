@@ -181,9 +181,7 @@ body{
             font-size: 16px;
             font-family: montserrat;
             overflow: hidden;
-            float: right;
-            
-         }
+              }
 
       #greeting{
       color:white;
@@ -1062,7 +1060,7 @@ ul#sitefooter li{
                                     height:98%;
                                     position:relative; 
                                     margin:auto;
-                                    z-index:2;
+                                    z-index:3;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
