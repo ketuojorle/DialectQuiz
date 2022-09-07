@@ -1049,6 +1049,8 @@ ul#sitefooter li{
                                        }    */
                                        
                                        img#frontend-image{
+                                          width: 98%;
+                                          height: 98%;
                                           position:relative;
                                           z-index: 1;
                                           }                           
