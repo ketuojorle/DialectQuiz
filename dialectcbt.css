@@ -145,11 +145,6 @@ body{
       width:27%;
       height: 85%;
       position: relative;
-      border:2px solid red;
-      border-radius: ;
-      border-top:px solid #B8860B;
-      border-right:px solid #B8860B;
-      border-bottom:px solid #B8860B;  
    }
 
   
@@ -1080,10 +1075,7 @@ ul#sitefooter li{
                                     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0);
                                     padding: 100px 3px 0px;}   
 
-                     #greeting{font-size:12px; color:black;}
-                     #topic-underline{
-                              border:0px solid white;
-                     }                                       
+                     #greeting{font-size:12px; color:black;}                                      
                      #ebu-intro{ color: black;font-weight:bold; }                                 
                      #frontend-button{
                         bottom:4px;                       
