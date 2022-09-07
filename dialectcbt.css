@@ -13,7 +13,7 @@ body{
  
 .SITENAME{
      position:absolute;
-     top:1%;
+     top:0.5%;
      left:5%;
      font-family: sofia;    
 }
@@ -92,7 +92,7 @@ body{
       flex-direction: row;
       justify-content:space-between;
       align-items: center;
-      background-image:conic-gradient(at 24.4% 68%, white 0deg, white 300deg, #0066ff 300deg) ; 
+      background-image:conic-gradient(at 26.7% 66%, white 0deg, white 300deg, #0066ff 300deg) ; 
       padding: 0px 20px 0px 0px;
 
            }
@@ -105,9 +105,6 @@ body{
 
    }
 
-   h1.frontpage-name::first-letter{
-      height: 200%;
-   }
       
     #frontend-button{
       position:absolute;
@@ -144,21 +141,17 @@ body{
       
    }
 
-   img#frontend-image{
-      width:25%; 
-      height:85%;
-      position:;
-      box-sizing: border-box;
-      background-color: rgba(255,255,255,0);
-      background-position: right;
-      background-size:100% 100%;
-      background-repeat: no-repeat;
-      border-radius:50% 50% 75% 0% ;
-      border-top:0px solid #B8860B;
-      border-right:0px solid #B8860B;
-      border-bottom:0px solid #B8860B;  
-           
+   #frontpix-container{
+      width:27%;
+      height: 85%;
+      position: relative;
+      border:2px solid red;
+      border-radius: ;
+      border-top:px solid #B8860B;
+      border-right:px solid #B8860B;
+      border-bottom:px solid #B8860B;  
    }
+
   
    div.Fmenu-bar>div{
       align-items:justify; 
@@ -175,7 +168,7 @@ body{
 
    
          #blackboard{
-            width: 75%;
+            width: 70%;
             height: 78%;
             background-color:black;
             color:#ffffff;
@@ -1048,11 +1041,12 @@ ul#sitefooter li{
                                        display:none;
                                        }    */
                                        
-                                       img#frontend-image{
-                                          width: 98%;
-                                          height: 98%;
-                                          position:relative;
-                                          z-index: 1;
+                  #frontpix-container{
+                                      width: 98%;
+                                      height: 98%;
+                                      position:relative;
+                                      margin:auto;
+                                      z-index: -1;
                                           }                           
                 /*     #blackboard{width:98%; height:90%; 
                                  border:0px solid white;
@@ -1065,9 +1059,10 @@ ul#sitefooter li{
 
                                  #blackboard{
                                     width:98%; 
-                                    height:90%;
+                                    height:98%;
                                     position:absolute; 
-                                    z-index: 2;
+                                    margin:auto;
+                                    z-index: ;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
