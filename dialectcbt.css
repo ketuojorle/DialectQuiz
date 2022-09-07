@@ -1046,7 +1046,7 @@ ul#sitefooter li{
                                       height: 98%;
                                       position:relative;
                                       margin:auto;
-                                      z-index: -1;
+                                      z-index: 1;
                                           }                           
                 /*     #blackboard{width:98%; height:90%; 
                                  border:0px solid white;
@@ -1062,7 +1062,7 @@ ul#sitefooter li{
                                     height:98%;
                                     position:absolute; 
                                     margin:auto;
-                                    z-index: ;
+                                    z-index:2;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
