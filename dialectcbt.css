@@ -1067,6 +1067,7 @@ ul#sitefooter li{
                                     position:absolute; 
                                     margin:auto;
                                     z-index:3;
+                                    top:0%;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
