@@ -1064,9 +1064,9 @@ ul#sitefooter li{
                                  #blackboard{
                                     width:90%; 
                                     height:90%;
-                                    position:absolute; 
+                                    position:relative; 
                                     margin:auto;
-                                    z-index:3;
+                                    z-index:2;
                                     top:0%;
                                     border:0px solid white;
                                     margin:auto;
