@@ -1058,9 +1058,9 @@ ul#sitefooter li{
                                  #blackboard{
                                     width:98%; 
                                     height:98%;
-                                    position:relative; 
+                                    position:absolute; 
                                     margin:auto;
-                                    z-index:3;
+                                    z-index:2;
                                     border:0px solid white;
                                     margin:auto;
                                     color:black;
