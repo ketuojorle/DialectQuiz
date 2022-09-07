@@ -1060,7 +1060,7 @@ ul#sitefooter li{
                                  #blackboard{
                                     width:98%; 
                                     height:98%;
-                                    position:absolute; 
+                                    position:relative; 
                                     margin:auto;
                                     z-index:2;
                                     border:0px solid white;
