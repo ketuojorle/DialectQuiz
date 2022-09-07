@@ -1029,7 +1029,7 @@ ul#sitefooter li{
                    }
 
    @media only screen and (orientation:portrait){  /*PORTRAIT ORIENTATION */
-                     div.Fcontainer{padding: 0px 0px 20px 0px; }
+                     div.Fcontainer{padding: 0px 0px 20px 0px; display:block;}
                    /*  #container-content{background-image:url(frontpagePix/ebumasq.png); background-size:cover; background-repeat:no-repeat; 
                                         background-position:center; display:flex; flex-direction:column; width:100%; height:90%; background-color:rgba(255,255,255,1.0);
                                         border:0px solid goldenrod; padding:0px;} */
