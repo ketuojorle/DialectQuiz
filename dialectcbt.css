@@ -1044,11 +1044,12 @@ ul#sitefooter li{
                                         border:0px solid goldenrod; padding:0px;} */
 
                    #container-content{ display:block; width:100%; height:90%; border:0px solid goldenrod; padding:0px;}   
-                    /* img.frontend-image{
+                    /* img#frontend-image{
                                        display:none;
                                        }    */
                                        
-                                       img.frontend-image{
+                                       img#frontend-image{
+                                          position:relative;
                                           z-index: 1;
                                           }                           
                 /*     #blackboard{width:98%; height:90%; 
@@ -1062,7 +1063,8 @@ ul#sitefooter li{
 
                                  #blackboard{
                                     width:98%; 
-                                    height:90%; 
+                                    height:90%;
+                                    position:absolute; 
                                     z-index: 2;
                                     border:0px solid white;
                                     margin:auto;
