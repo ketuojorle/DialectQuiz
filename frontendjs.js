@@ -36,7 +36,7 @@ window.addEventListener("load",function(){
      
       DATEBOX.innerHTML = `<strong>Today's Date :  ${dayOfTheMonth} / ${monthOfTheYear + 1} / ${Year} </strong>`;
       let briefIntroduction;
-      briefIntroduction= `My name is Martins Akpala. I am your anchor on the quiz. Ebu dialect is Igala language spoken 
+      briefIntroduction= `My name is Martins Akpala. I am your anchor on this quiz. Ebu dialect is Igala language spoken 
                           by the people of Ebu town in Oshimili North Local Government Area of Delta State, Nigeria.
                           Very simple to learn. At the end of the tutorial video and quiz, you WILL be able to construct
                            simple sentences in Ebu dialect. Just click the "Take Quiz" button.`;
