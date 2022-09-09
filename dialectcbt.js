@@ -340,6 +340,8 @@
         function TimeCount(){  
          stopWatch.innerHTML ="Remaining Time:" + m + minLabel+ "" +s + secLabel +"";  
           s--;
+         stopWatch.style.backgroundColor = "white";
+         stopWatch.style.color = "red";
          if(s<=1){secLabel="sec";} else{if(s>1 &&s<=60){secLabel=secLabel;}}
          if(m<=1){minLabel="min";}else{minLabel=minLabel;}
          if(s==0){m=m - 1; s=60; }
@@ -351,6 +353,7 @@
        if(m < 0 && q < QLen){
                   stopTime();
                   stopWatch.innerHTML = " ";
+                  stopWatch.style.backgroundColor = "black";
                   PROGRESSBAR.innerHTML = "";
                   questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 240px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
                   questionContainer.style.textAlign="center";
@@ -388,8 +391,6 @@
                                                                                      
                                                                                      displaytable();
                                                                                      questionContainer.appendChild(tableHidder);
-                                                                                  //   tableHidder.style.margin = "auto";
-                                                                                 //    tableHidder.style.width = "50%";
                                                                                      testInstructionButton.setAttribute("value","Go back home or Repeat Test");
                                                                                      testInstructionButton.onclick = function(){window.location.reload(true); };
                                                                                      };
@@ -410,9 +411,7 @@
                         //CODE FOR AFFILIATE PRODUCTS IMAGE INTERCHANGE
                        let imgIndex =0;  
                        let infoIndex=0;
-                       let anchorIndex=0;
-                             
-                       
+                       let anchorIndex=0;              
                        let advertContainer=document.getElementById("fade-advert");
                        let productLink=document.getElementById("link");
                        let goodsCaption = document.getElementById('goods-caption');
