@@ -355,7 +355,7 @@
                   stopWatch.innerHTML = " ";
                   stopWatch.style.backgroundColor = "black";
                   PROGRESSBAR.innerHTML = "";
-                  questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 190px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
+                  questionContainer.innerHTML="<h4><b style='color:red;transform:translate(0px, 110px);'>OOOooops!</b><br>TIME OVER</h4><h1>Thanks for taking the Test</h1>" ;
                   questionContainer.style.textAlign="center";
                   questionContainer.style.minHeight =`${600}px`;
                   questionContainer.style.border="0px solid grey";
@@ -381,7 +381,7 @@
                            stopWatch.innerHTML=" ";
                            stopWatch.style.backgroundColor="black";
                            questionContainer.style.minHeight =`${600}px`;
-                           questionContainer.innerHTML="<h1 style='transform:translate(0px, 190px);'>You have completed the test.<br>Thanks for taking the <br> Test</h1>";
+                           questionContainer.innerHTML="<h1 style='transform:translate(0px, 110px);'>You have completed the test. Thanks for taking the <br> Test</h1>";
                            questionContainer.style.textAlign="center";
                            
                            questionContainer.style.border="0px solid grey";
